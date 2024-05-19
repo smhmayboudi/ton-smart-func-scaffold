@@ -26,3 +26,27 @@
 `npx blueprint create ContractName` or `yarn blueprint create ContractName`
 
 # ton-smart-func-scaffold
+
+Add to package.json by running:
+
+```shell
+npm install --save-dev blueprint-scaffold
+```
+
+And add to the blueprint.config.ts:
+
+```shell
+import { ScaffoldPlugin } from 'blueprint-scaffold';
+
+export const config = {
+  plugins: [
+    new ScaffoldPlugin(),
+  ]
+};
+```
+
+Then you may run it:
+
+``shell
+npm exec blueprint scaffold
+```
