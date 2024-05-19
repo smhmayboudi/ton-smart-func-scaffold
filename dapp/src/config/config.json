@@ -1,0 +1,49 @@
+{
+  "TonSmartFuncScaffold": {
+    "defaultAddress": "",
+    "tabName": "",
+    "sendFunctions": {
+      "sendDeploy": {
+        "tabName": "",
+        "params": {
+          "value": {
+            "fieldTitle": ""
+          }
+        }
+      },
+      "sendIncrease": {
+        "tabName": "",
+        "params": {
+          "opts": {
+            "fieldTitle": ""
+          }
+        }
+      }
+    },
+    "getFunctions": {
+      "getCounter": {
+        "tabName": "",
+        "params": {},
+        "outNames": []
+      },
+      "getID": {
+        "tabName": "",
+        "params": {},
+        "outNames": []
+      }
+    },
+    "definedTypes": {
+      "TonSmartFuncScaffoldConfig": {
+        "shownName": "",
+        "properties": {
+          "id": {
+            "fieldTitle": ""
+          },
+          "counter": {
+            "fieldTitle": ""
+          }
+        }
+      }
+    }
+  }
+}
