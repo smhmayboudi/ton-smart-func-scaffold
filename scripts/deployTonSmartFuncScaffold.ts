@@ -9,8 +9,8 @@ export async function run(provider: NetworkProvider) {
                 id: Math.floor(Math.random() * 10000),
                 counter: 0,
             },
-            await compile('TonSmartFuncScaffold')
-        )
+            await compile('TonSmartFuncScaffold'),
+        ),
     );
 
     await tonSmartFuncScaffold.sendDeploy(provider.sender(), toNano('0.05'));
