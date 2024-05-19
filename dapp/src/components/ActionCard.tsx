@@ -124,7 +124,7 @@ export const ActionCard: React.FC<ActionCardProps> = ({
   const toast = useToast();
 
   const [outNames, setOutNames] = useState<string[]>(
-    "outNames" in methodConfig ? (methodConfig.outNames as string[]) : []
+    "outNames" in methodConfig ? (methodConfig.outNames as string[]) : [],
   );
 
   useEffect(() => {
