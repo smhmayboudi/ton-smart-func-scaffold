@@ -17,6 +17,13 @@ describe('TonSmartFuncScaffold', () => {
 
     beforeEach(async () => {
         blockchain = await Blockchain.create();
+        blockchain.verbosity = {
+            ...blockchain.verbosity,
+            blockchainLogs: true,
+            vmLogs: 'vm_logs_full',
+            debugLogs: true,
+            print: false,
+        };
 
         tonSmartFuncScaffold = blockchain.openContract(
             TonSmartFuncScaffold.createFromConfig(
